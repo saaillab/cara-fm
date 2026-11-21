@@ -59,7 +59,7 @@ Conventional foundation model benchmarks optimize unimodal English perplexity or
 | Deployment Checkpoint | Failure Mode Prevented | Operational Verification |
 |---|---|---|
 | **Offline-First Execution** | Cellular dead-zones in rural Unguja, Pemba & mainland plots | Complete TFLite / ONNX inference with zero cloud round-trips |
-| **Multilingual & Voice Interface** | English-only agronomic advisories excluding smallholders | Grounded Swahili lexicons validated via **CultureSEEDS** & **Dira** |
+| **Multilingual & Voice Interface** | English-only agronomic advisories excluding smallholders | Grounded Swahili lexicons via **Zanzibar Swahili Corpus** & **Dira** |
 | **Balanced Field Validation** | High aggregate accuracy concealing minority disease failures | Per-class Recall, Macro-F1 & `DGS_F1` reporting (`DGS-Bench`) |
 | **Sovereign Community Stewardship** | Extractive data monetization away from farmer cooperatives | Local license attribution & participatory governance agreements |
 
@@ -73,10 +73,11 @@ Published in **Proceedings of Machine Learning Research (PMLR Vol. 302, pp. 1–
 
 ## Companion SAAIL Lab Programs Realizing CARA-FM
 
-- **CultureSEEDS East Africa (US$100K Google Award):** Community-authored safety & cultural evaluation across Swahili and 9 African languages -> [Project Site](https://saaillab.github.io/projects/cultureseeds/)
+- **Responsible AI & Governance for the Global South:** Deployment-gap auditing, data sovereignty, and African AI safety -> [Project Site](https://saaillab.github.io/projects/responsible-ai-global-south/)
 - **Zanzibar Swahili Corpus & Dira Provenance Benchmark:** Detecting native coastal Swahili prose versus synthetic translationese -> [Project Site](https://saaillab.github.io/projects/swahili-dira/)
 - **CropGuardNet:** 481.6K-parameter 200 FPS ONNX implementation of CARA-FM's Tiny Edge tier -> [GitHub Repo](https://github.com/saaillab/CropGuardNet)
 - **ZSTC-Clove-V1 & Ubora-AI:** Participatory inspection workflow built alongside ZSTC Zanzibar clove graders -> [Project Site](https://saaillab.github.io/projects/ubora-ai/)
+- **SAAIL Lab (IIT Madras Zanzibar):** AI, deep learning, computer vision, and Swahili NLP research portal -> [saaillab.github.io](https://saaillab.github.io/)
 
 ---
 
