@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "Context-Aware and Responsible Artificial Intelligence for Sustainable Agricultural Development Using Foundation Models (CARA-FM)"
+type: software
+authors:
+  - family-names: Nyalala
+    given-names: Innocent
+    orcid: "https://orcid.org/0000-0002-7969-437X"
+repository-code: "https://github.com/saaillab/cara-fm"
+url: "https://saaillab.github.io/cara-fm/"
+license: MIT
+year: 2026

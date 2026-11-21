@@ -1,3 +1,5 @@
+[![Project Page](https://img.shields.io/badge/Project%20Page-Live-2563eb)](https://saaillab.github.io/cara-fm/) [![SAAIL Lab](https://img.shields.io/badge/DLI%202025-Best%20Poster-f59e0b)](https://saaillab.github.io/papers/cara-fm/)
+
 # CARA-FM: Culturally Attuned and Resource-Aware Foundation Models for East African Agriculture
 
 [![DL Indaba 2025](https://img.shields.io/badge/DL%20Indaba-2025-red)](https://deeplearningindaba.com/2025/)
