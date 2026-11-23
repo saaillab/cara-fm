@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cara-fm"
+version = "1.1.0"
+description = "Culturally Attuned and Resource-Aware Foundation Models (CARA-FM) evaluation schema, nine-index framework, and East African agricultural AI benchmark suite."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "CC-BY-4.0" }
+authors = [
+  { name = "Innocent Nyalala", email = "innocent@iitmz.ac.in" },
+  { name = "Nirav Bhatt", email = "niravbhatt@iitmz.ac.in" },
+]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+vision = ["torch>=2.1", "torchvision>=0.16", "timm>=0.9", "scikit-learn>=1.3", "matplotlib>=3.7", "Pillow>=10.0"]
+dev = ["pytest>=7.4", "jsonschema>=4.20"]
+
+[project.scripts]
+cara-fm = "cara_fm.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cara_fm*"]

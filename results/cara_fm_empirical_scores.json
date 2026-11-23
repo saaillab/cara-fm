@@ -1,0 +1,215 @@
+{
+  "framework_version": "1.1.0",
+  "license": "CC-BY-4.0",
+  "datasets": {
+    "zanzibar_cloves_v1": {
+      "n_train": 3673,
+      "n_val": 792,
+      "n_test": 793,
+      "classes": 8
+    },
+    "uganda_cassava_dgs_seed42": {
+      "n_lab_train": 1600,
+      "n_field_test": 19397,
+      "classes": 5
+    }
+  },
+  "note": "Technical (CEI, DFS, MPP) and system Cultural Alignment (CAI) are empirically measured; agronomic/field-trial indices (YIP, IOE, IAE, CAS, KPV) remain null (requires_field_trial).",
+  "models": [
+    {
+      "framework_version": "1.1.0",
+      "license": "CC-BY-4.0",
+      "model_id": "MobileNetV3-Small",
+      "task_domain": "zanzibar_cloves_and_uganda_cassava",
+      "hardware_profile": {
+        "device_ram_gb": 0.189,
+        "model_size_mb": 5.95,
+        "cpu_latency_ms": 20.69,
+        "offline_capable": true,
+        "requires_gpu": false
+      },
+      "technical_indices": {
+        "CEI": 0.8311,
+        "DFS": 1.0,
+        "MPP": 1.0
+      },
+      "agricultural_indices": {
+        "YIP": null,
+        "IOE": null,
+        "IAE": null
+      },
+      "cultural_indices": {
+        "CAI": 0.8829,
+        "CAS": null,
+        "KPV": null
+      },
+      "governance_metadata": {
+        "community_data_trust": true,
+        "farmer_majority_oversight": true,
+        "iks_attribution_protocol": true,
+        "supported_languages": [
+          "en",
+          "sw"
+        ]
+      },
+      "composite_readiness_score": 0.9285,
+      "empirical_status": "technical_and_cultural_benchmarked_field_trials_pending"
+    },
+    {
+      "framework_version": "1.1.0",
+      "license": "CC-BY-4.0",
+      "model_id": "EfficientNet-B0",
+      "task_domain": "zanzibar_cloves_and_uganda_cassava",
+      "hardware_profile": {
+        "device_ram_gb": 0.203,
+        "model_size_mb": 15.6,
+        "cpu_latency_ms": 44.49,
+        "offline_capable": true,
+        "requires_gpu": false
+      },
+      "technical_indices": {
+        "CEI": 0.7717,
+        "DFS": 1.0,
+        "MPP": 1.0
+      },
+      "agricultural_indices": {
+        "YIP": null,
+        "IOE": null,
+        "IAE": null
+      },
+      "cultural_indices": {
+        "CAI": 0.8766,
+        "CAS": null,
+        "KPV": null
+      },
+      "governance_metadata": {
+        "community_data_trust": true,
+        "farmer_majority_oversight": true,
+        "iks_attribution_protocol": true,
+        "supported_languages": [
+          "en",
+          "sw"
+        ]
+      },
+      "composite_readiness_score": 0.9121,
+      "empirical_status": "technical_and_cultural_benchmarked_field_trials_pending"
+    },
+    {
+      "framework_version": "1.1.0",
+      "license": "CC-BY-4.0",
+      "model_id": "ResNet-18",
+      "task_domain": "zanzibar_cloves_and_uganda_cassava",
+      "hardware_profile": {
+        "device_ram_gb": 0.243,
+        "model_size_mb": 42.72,
+        "cpu_latency_ms": 69.73,
+        "offline_capable": true,
+        "requires_gpu": false
+      },
+      "technical_indices": {
+        "CEI": 0.7493,
+        "DFS": 1.0,
+        "MPP": 1.0
+      },
+      "agricultural_indices": {
+        "YIP": null,
+        "IOE": null,
+        "IAE": null
+      },
+      "cultural_indices": {
+        "CAI": 0.8916,
+        "CAS": null,
+        "KPV": null
+      },
+      "governance_metadata": {
+        "community_data_trust": true,
+        "farmer_majority_oversight": true,
+        "iks_attribution_protocol": true,
+        "supported_languages": [
+          "en",
+          "sw"
+        ]
+      },
+      "composite_readiness_score": 0.9102,
+      "empirical_status": "technical_and_cultural_benchmarked_field_trials_pending"
+    },
+    {
+      "framework_version": "1.1.0",
+      "license": "CC-BY-4.0",
+      "model_id": "ViT-Small/16",
+      "task_domain": "zanzibar_cloves_and_uganda_cassava",
+      "hardware_profile": {
+        "device_ram_gb": 0.305,
+        "model_size_mb": 82.71,
+        "cpu_latency_ms": 167.95,
+        "offline_capable": true,
+        "requires_gpu": false
+      },
+      "technical_indices": {
+        "CEI": 0.6709,
+        "DFS": 1.0,
+        "MPP": 1.0
+      },
+      "agricultural_indices": {
+        "YIP": null,
+        "IOE": null,
+        "IAE": null
+      },
+      "cultural_indices": {
+        "CAI": 0.8214,
+        "CAS": null,
+        "KPV": null
+      },
+      "governance_metadata": {
+        "community_data_trust": true,
+        "farmer_majority_oversight": true,
+        "iks_attribution_protocol": true,
+        "supported_languages": [
+          "en",
+          "sw"
+        ]
+      },
+      "composite_readiness_score": 0.8731,
+      "empirical_status": "technical_and_cultural_benchmarked_field_trials_pending"
+    },
+    {
+      "framework_version": "1.1.0",
+      "license": "CC-BY-4.0",
+      "model_id": "ResNet-50",
+      "task_domain": "zanzibar_cloves_and_uganda_cassava",
+      "hardware_profile": {
+        "device_ram_gb": 0.312,
+        "model_size_mb": 90.04,
+        "cpu_latency_ms": 174.6,
+        "offline_capable": true,
+        "requires_gpu": false
+      },
+      "technical_indices": {
+        "CEI": 0.6707,
+        "DFS": 1.0,
+        "MPP": 1.0
+      },
+      "agricultural_indices": {
+        "YIP": null,
+        "IOE": null,
+        "IAE": null
+      },
+      "cultural_indices": {
+        "CAI": 0.8175,
+        "CAS": null,
+        "KPV": null
+      },
+      "governance_metadata": {
+        "community_data_trust": true,
+        "farmer_majority_oversight": true,
+        "iks_attribution_protocol": true,
+        "supported_languages": [
+          "en",
+          "sw"
+        ]
+      },
+      "composite_readiness_score": 0.8721,
+      "empirical_status": "technical_and_cultural_benchmarked_field_trials_pending"
+    }
+  ]
+}

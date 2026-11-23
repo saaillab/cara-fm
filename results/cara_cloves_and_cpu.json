@@ -1,0 +1,84 @@
+{
+  "_bilingual_router": {
+    "en_acc": 1.0,
+    "sw_acc": 1.0,
+    "mix_acc": 1.0
+  },
+  "models": {
+    "MobileNetV3-Small": {
+      "cloves_test_acc_pct": 94.07,
+      "cloves_test_bacc_pct": 93.07,
+      "cloves_test_f1_pct": 93.1,
+      "params_m": 1.53,
+      "fp32_mb": 5.95,
+      "fp16_mb": 2.91,
+      "cpu_latency_ms": 20.69,
+      "edge_ram_gb": 0.189,
+      "bilingual_router": {
+        "en_acc": 1.0,
+        "sw_acc": 1.0,
+        "mix_acc": 1.0
+      }
+    },
+    "EfficientNet-B0": {
+      "cloves_test_acc_pct": 95.08,
+      "cloves_test_bacc_pct": 95.42,
+      "cloves_test_f1_pct": 95.66,
+      "params_m": 4.02,
+      "fp32_mb": 15.6,
+      "fp16_mb": 7.66,
+      "cpu_latency_ms": 44.49,
+      "edge_ram_gb": 0.203,
+      "bilingual_router": {
+        "en_acc": 1.0,
+        "sw_acc": 1.0,
+        "mix_acc": 1.0
+      }
+    },
+    "ResNet-18": {
+      "cloves_test_acc_pct": 95.96,
+      "cloves_test_bacc_pct": 95.65,
+      "cloves_test_f1_pct": 95.79,
+      "params_m": 11.18,
+      "fp32_mb": 42.72,
+      "fp16_mb": 21.33,
+      "cpu_latency_ms": 69.73,
+      "edge_ram_gb": 0.243,
+      "bilingual_router": {
+        "en_acc": 1.0,
+        "sw_acc": 1.0,
+        "mix_acc": 1.0
+      }
+    },
+    "ViT-Small/16": {
+      "cloves_test_acc_pct": 94.7,
+      "cloves_test_bacc_pct": 93.85,
+      "cloves_test_f1_pct": 93.9,
+      "params_m": 21.67,
+      "fp32_mb": 82.71,
+      "fp16_mb": 41.33,
+      "cpu_latency_ms": 167.95,
+      "edge_ram_gb": 0.305,
+      "bilingual_router": {
+        "en_acc": 1.0,
+        "sw_acc": 1.0,
+        "mix_acc": 1.0
+      }
+    },
+    "ResNet-50": {
+      "cloves_test_acc_pct": 96.47,
+      "cloves_test_bacc_pct": 96.64,
+      "cloves_test_f1_pct": 96.83,
+      "params_m": 23.52,
+      "fp32_mb": 90.04,
+      "fp16_mb": 44.87,
+      "cpu_latency_ms": 174.6,
+      "edge_ram_gb": 0.312,
+      "bilingual_router": {
+        "en_acc": 1.0,
+        "sw_acc": 1.0,
+        "mix_acc": 1.0
+      }
+    }
+  }
+}

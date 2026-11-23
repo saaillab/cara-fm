@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: "Culturally Attuned and Resource-Aware Foundation Models for East African Agriculture: A Theoretical Framework and Research Agenda"
-message: "If you build on this framework or research agenda, please cite our work."
+message: "If you build on this framework, evaluation schema, or empirical suite, please cite our PMLR Vol. 302 paper."
 type: software
 authors:
   - family-names: Nyalala
@@ -9,6 +9,20 @@ authors:
   - family-names: Bhatt
     given-names: Nirav
 repository-code: "https://github.com/saaillab/cara-fm"
-url: "https://saaillab.github.io/cara-fm/"
-license: CC-BY-NC-4.0
+url: "https://proceedings.mlr.press/v302/nyalala26a.html"
+license: CC-BY-4.0
 year: 2026
+preferred-citation:
+  type: conference-paper
+  title: "Culturally Attuned and Resource-Aware Foundation Models for East African Agriculture: A Theoretical Framework and Research Agenda"
+  authors:
+    - family-names: Nyalala
+      given-names: Innocent
+    - family-names: Bhatt
+      given-names: Nirav
+  collection-title: "Proceedings of Machine Learning Research (PMLR)"
+  volume: 302
+  start: 1
+  end: 11
+  year: 2026
+  url: "https://proceedings.mlr.press/v302/nyalala26a.html"

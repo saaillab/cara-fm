@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/saaillab/cara-fm/schemas/cara_fm_evaluation_schema.json",
+  "title": "CARA-FM Nine-Index Evaluation Scorecard Schema",
+  "description": "Structured evaluation schema for Culturally Attuned and Resource-Aware Foundation Models across Technical, Agricultural, and Cultural dimensions (PMLR Vol. 302).",
+  "type": "object",
+  "required": [
+    "framework_version",
+    "license",
+    "model_id",
+    "hardware_profile",
+    "technical_indices",
+    "agricultural_indices",
+    "cultural_indices",
+    "composite_readiness_score"
+  ],
+  "properties": {
+    "framework_version": { "type": "string" },
+    "license": { "type": "string", "const": "CC-BY-4.0" },
+    "model_id": { "type": "string", "minLength": 1 },
+    "task_domain": { "type": "string" },
+    "hardware_profile": {
+      "type": "object",
+      "required": ["device_ram_gb", "model_size_mb", "cpu_latency_ms", "offline_capable"],
+      "properties": {
+        "device_ram_gb": { "type": "number", "minimum": 0.1 },
+        "model_size_mb": { "type": "number", "minimum": 0.01 },
+        "cpu_latency_ms": { "type": "number", "minimum": 0.01 },
+        "offline_capable": { "type": "boolean" },
+        "requires_gpu": { "type": "boolean" }
+      }
+    },
+    "technical_indices": {
+      "type": "object",
+      "required": ["CEI", "DFS", "MPP"],
+      "properties": {
+        "CEI": { "$ref": "#/$defs/unitIndex", "description": "Computational Efficiency Index" },
+        "DFS": { "$ref": "#/$defs/unitIndex", "description": "Deployment Feasibility Score" },
+        "MPP": { "$ref": "#/$defs/unitIndex", "description": "Multilingual Performance Parity" }
+      }
+    },
+    "agricultural_indices": {
+      "type": "object",
+      "required": ["YIP", "IOE", "IAE"],
+      "properties": {
+        "YIP": { "$ref": "#/$defs/trialIndex", "description": "Yield Improvement Potential" },
+        "IOE": { "$ref": "#/$defs/trialIndex", "description": "Input Optimization Efficiency" },
+        "IAE": { "$ref": "#/$defs/trialIndex", "description": "Information Access Enhancement" }
+      }
+    },
+    "cultural_indices": {
+      "type": "object",
+      "required": ["CAI", "CAS", "KPV"],
+      "properties": {
+        "CAI": { "$ref": "#/$defs/unitIndex", "description": "Cultural Alignment Index" },
+        "CAS": { "$ref": "#/$defs/trialIndex", "description": "Community Acceptance Score" },
+        "KPV": { "$ref": "#/$defs/trialIndex", "description": "Knowledge Preservation Value" }
+      }
+    },
+    "governance_metadata": {
+      "type": "object",
+      "properties": {
+        "community_data_trust": { "type": "boolean" },
+        "farmer_majority_oversight": { "type": "boolean" },
+        "iks_attribution_protocol": { "type": "boolean" },
+        "supported_languages": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "composite_readiness_score": { "$ref": "#/$defs/unitIndex" }
+  },
+  "$defs": {
+    "unitIndex": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "trialIndex": {
+      "oneOf": [
+        { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        { "type": "null" }
+      ]
+    }
+  }
+}
